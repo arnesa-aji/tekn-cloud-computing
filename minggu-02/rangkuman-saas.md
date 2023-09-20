@@ -61,3 +61,26 @@ Saat membangun aplikasi SaaS, kemungkinan besar Anda akan membangunnya di cloud.
 
 Penyimpanan Web S3: Amazon S3 adalah layanan penyimpanan objek yang skalabel dan dapat digunakan untuk berbagai keperluan, termasuk penyimpanan data aplikasi web dan pencadangan basis data.
 Content Delivery Network (CDN): CDN adalah sistem server terdistribusi yang meningkatkan performa dan ketersediaan penyampaian konten aplikasi ke pengguna.
+
+
+
+
+
+
+
+=============================================================================
+
+latihan no 2 :
+
+Berikut adalah dua layanan SaaS (Software as a Service) 
+
+1. Google Workspace :Google Workspace adalah kumpulan alat produktivitas berbasis cloud yang mencakup Gmail, Google Drive, Google Docs, Google Sheets, Google Slides, dan banyak lagi. Ini digunakan oleh perusahaan dan individu untuk berkolaborasi secara online, berbagi dokumen, dan mengelola komunikasi email mereka.
+
+2. Microsoft 365 :Microsoft 365 adalah paket perangkat lunak berlangganan yang mencakup berbagai aplikasi produktivitas, seperti Microsoft Word, Excel, PowerPoint, Outlook, dan lainnya. Layanan ini juga mencakup penyimpanan cloud, alat kolaborasi tim, serta fitur keamanan dan manajemen yang kuat.Microsoft 365 digunakan oleh individu, bisnis kecil, dan perusahaan besar sebagai solusi produktivitas berbasis cloud. Pengguna dapat mengakses aplikasi ini dari berbagai perangkat dengan langganan bulanan atau tahunan.
+
+
+berikut memiliki fungsionalitas serupa dengan dua layanan SaaS yang telah disebutkan sebelumnya:
+
+-Alternatif Desktop untuk Microsoft 365:Microsoft Office Suite
+
+-Alternatif untuk Google Workspace: LibreOffice
