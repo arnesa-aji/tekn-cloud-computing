@@ -42,4 +42,16 @@ Jadi, SAAS adalah model pengiriman perangkat lunak yang dapat memudahkan akses d
 
 Apa itu Software as a Service SaaS Architecture
 
+SaaS adalah cara untuk mengirimkan perangkat lunak, penyedia perangkat lunak secara terpusat menghosting satu atau lebih aplikasi dan membuatnya tersedia untuk pelanggan melalui internet. Arsitektur SaaS juga merupakan salah satu pilar utama cloud computing.
+Ledakan dalam komputasi Cloud, yang didorong oleh penyedia layanan cloud seperti Microsoft dengan Azure, Amazon Web Services (AWS), Oracle, dan IBM, telah menyebabkan pertumbuhan pada produk dan layanan lain yang disampaikan melalui internet.
+Setiap pembaruan atau patch pada aplikasi arsitektur SaaS semuanya ditangani oleh penyedia. Pelanggan tidak perlu mengunduh pemutakhiran atau menginstal ulang versi baru suatu produk karena perangkat lunak dikirimkan melalui internet.
+Mengapa Menggunakan Arsitektur SaaS,Dari sudut pandang konsumen, aplikasi SaaS adalah salah satu cara termudah dan paling dapat diandalkan untuk menggunakan layanan atau produk digital.Dari perspektif bisnis, produk perangkat lunak yang diberikan “sebagai layanan” memungkinkan perusahaan untuk menawarkan produk mereka dalam skala besar dan global.
+
+Setiap pembaruan atau patch pada aplikasi arsitektur SaaS semuanya ditangani oleh penyedia. Pelanggan tidak perlu mengunduh pemutakhiran atau menginstal ulang versi baru suatu produk karena perangkat lunak dikirimkan melalui internet.
+Mengapa Menggunakan Arsitektur SaaS,Dari sudut pandang konsumen, aplikasi SaaS adalah salah satu cara termudah dan paling dapat diandalkan untuk menggunakan layanan atau produk digital.Dari perspektif bisnis, produk perangkat lunak yang diberikan “sebagai layanan” memungkinkan perusahaan untuk menawarkan produk mereka dalam skala besar dan global.
+
+Platform SaaS memiliki beragam kemampuan. Apalagi jika digabungkan dengan penawaran cloud lainnya seperti IaaS (Infrastructure as a Service) dan PaaS (Platform as a Service).Teknologi cloud seperti Microsoft Azure memungkinkan Anda menyediakan server yang dapat menghosting situs web, database, dan banyak lagi.
+
+Cara membangun aplikasi SaaS berbasis cloud
+
 
