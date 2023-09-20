@@ -52,6 +52,12 @@ Mengapa Menggunakan Arsitektur SaaS,Dari sudut pandang konsumen, aplikasi SaaS a
 
 Platform SaaS memiliki beragam kemampuan. Apalagi jika digabungkan dengan penawaran cloud lainnya seperti IaaS (Infrastructure as a Service) dan PaaS (Platform as a Service).Teknologi cloud seperti Microsoft Azure memungkinkan Anda menyediakan server yang dapat menghosting situs web, database, dan banyak lagi.
 
+==============================================================
+
+
 Cara membangun aplikasi SaaS berbasis cloud
 
+Saat membangun aplikasi SaaS, kemungkinan besar Anda akan membangunnya di cloud.cloud memiliki keuntungan, terutama dalam hal skalabilitas, dibandingkan dengan lingkungan server lokal.Pemilihan bahasa pemrograman yang modern menjadi penting dalam membangun produk SaaS. Python adalah salah satu pilihan yang populer karena fleksibilitasnya.penggunaan basis data berorientasi dokumen, seperti MongoDB, yang dapat memberikan performa, ketersediaan, dan skalabilitas tinggi.Sistem antrian (queuing system) digunakan untuk komunikasi asynchronous antara aplikasi dan layanan pihak ketiga. RabbitMQ adalah salah satu contoh sistem antrian yang populer.AWS dan EC2 menyediakan infrastruktur untuk menjalankan aplikasi web dan tugas besar dengan kapasitas yang dapat disesuaikan.
 
+Penyimpanan Web S3: Amazon S3 adalah layanan penyimpanan objek yang skalabel dan dapat digunakan untuk berbagai keperluan, termasuk penyimpanan data aplikasi web dan pencadangan basis data.
+Content Delivery Network (CDN): CDN adalah sistem server terdistribusi yang meningkatkan performa dan ketersediaan penyampaian konten aplikasi ke pengguna.
