@@ -83,4 +83,4 @@ berikut memiliki fungsionalitas serupa dengan dua layanan SaaS yang telah disebu
 
 -Alternatif Desktop untuk Microsoft 365:Microsoft Office Suite
 
--Alternatif untuk Google Workspace: LibreOffice
+-Alternatif untuk Google Workspace: LibreOfficee 
