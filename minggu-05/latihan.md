@@ -16,6 +16,6 @@ $ java --version
  ```
 berikut tampilan jika java sudah terinstal
 
-![perintah java](./tampilan java ketika sudah di instal.jpg)
+![perintah java](./tampilan-java-ketika-sudah-di-instal.jpg)
 
 3. 
