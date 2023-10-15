@@ -16,4 +16,6 @@ $ sudo apt install default-jre -y
  ```
 berikut tampilan jika java sudah terinstal
 
+![perintah java](./tampilan java ketika sudah di instal.jpg)
+
 3. 
