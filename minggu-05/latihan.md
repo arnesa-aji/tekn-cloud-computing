@@ -15,4 +15,5 @@ $ sudo apt install default-jre -y
 $ sudo apt install default-jre -y
  ```
 berikut tampilan jika java sudah terinstal
+
 3. 
