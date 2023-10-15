@@ -7,7 +7,7 @@
 3. gradle-wrapper.jar
 4. gradle-warpper.properties
 
-langkah-langkah penginstalan :
+## langkah-langkah penginstalan :
 1. instal java menggunakan perintah berikut :
    ```
    $ sudo apt install default-jre -y
