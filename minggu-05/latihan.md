@@ -12,7 +12,7 @@ $ sudo apt install default-jre -y
 ```
 2. setelah selesai,cek java menggunakan perintah berikut :
  ```
-$ sudo apt install default-jre -y
+$ java --version
  ```
 berikut tampilan jika java sudah terinstal
 
