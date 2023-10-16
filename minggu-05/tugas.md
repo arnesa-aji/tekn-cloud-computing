@@ -17,4 +17,10 @@ Dengan menggunakan fasilitas demo, pilihlah E-Commerce webstore atau backend ERP
    ![menu beranda](./setelah-registrasi-04.jpg)
 
 5. lakukan pengecekan akun yang telah anda buat dengan memilih menu profil
-   
+   ![klik profil](./setelah-registrasi-06.jpg)
+
+6. anda akan masuk ke menu profil,anda bisa memperbarui data diri anda di sini.berikut tampilanya
+   ![menu-profil](./profil-05.jpg)
+
+
+   selesai
