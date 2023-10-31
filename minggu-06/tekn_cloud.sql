@@ -1,0 +1,1 @@
+CREATE DATABASE tekn_cloud;
