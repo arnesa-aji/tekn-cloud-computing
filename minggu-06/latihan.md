@@ -3,5 +3,9 @@ Software yang dibutuhkan
 2. Go
 
 
-instal MySOL
- ![mysql](./mysql-01.jpg)
+## instal MySOL
+ ![mysql](./mysql-workbench.jpg)
+
+
+## instal go
+![mysql](./)
