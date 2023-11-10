@@ -1,8 +1,6 @@
 
 # Latihan dan Tugas
 
-### latihan : taruh link latihan disini
-1. link latihan 1
-2. link latihan 2
+### latihan : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-07/latihan.md
 
-### Tugas : taruh link tugas disini
+### Tugas : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-07/Tugas.md
