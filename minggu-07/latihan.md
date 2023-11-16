@@ -1,11 +1,9 @@
-1. Install Docker sesuai petunjuk pada Materi dan Pembahasan di atas, sesuaikan dengan OS yang anda gunakan.
+# Menginstal Docker via windows
 
-# Menginstal Docker
-
-##Prerequisites
-1. docker Desktop (windows)
+## Prerequisites
+1. docker Desktop
 2. Git client
-3. text editor :Vscode
+3. text editor
 
 
 ## Langkah-Langkah :
@@ -14,7 +12,7 @@
    ```
    git clone https://github.com/docker/getting-started-app.git
    ```
-2. setelah diclone,akan ada beberapa file berikut di folder getting-started-app:
+2. setelah clone,akan ada beberapa file berikut di folder getting-started-app:
 
    `package.json`
 
@@ -34,7 +32,7 @@
    ```
    type nul > Dockerfile
    ```
-5. setelah file `Dockerfile` dibaut,edit menggunakan text editor lalu isikan sebagai berikut :
+5. setelah file `Dockerfile` dibuat,edit menggunakan text editor lalu isikan sebagai berikut :
    ```
    # syntax=docker/dockerfile:1
    FROM node:18-alpine
@@ -48,7 +46,8 @@
    ```
    docker build -t getting-started .
    ```
-
+   ![build docker](./01-docker-gett-start1.jpg)
+   ![build docker](./02-docker-gett-start2.jpg)
 ## Jalankan app container
 
 1. lalu jalankan container dengan mengetikan `docker ru ` pada cmd sebagai berikut :
@@ -56,7 +55,7 @@
    docker run -dp 127.0.0.1:3000:3000 getting-started
    ```
 2. setelah beberapa saat akan muncul tampilan seperti di gambar berikut :
-   ![taruh gambar disini](./)
+   ![run docker](./)
 
 
     lalu buka browser anda dan ketikan link berikut :
@@ -66,12 +65,11 @@
 
     lalu pada jendela browser anda akan tampak sebagai berikut :
 
-    ![taruh gambar disini](./)
+    ![localhost](./05-docker-localhost-3000.jpg)
     
 3. tampilan docker destop
    
-   ![taruh gambar disini](./)
-   ![taruh gambar disini](./)
-   ![taruh gambar disini](./)
+   ![taruh gambar disini](./03-docker-container-gui.jpg)
+   ![taruh gambar disini](./04-docker-images-gui.jpg)
 
 4. selesai
