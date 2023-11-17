@@ -13,7 +13,7 @@
    ```
    Jika docker sudah berstatus Running, maka ia akan memiliki tampilan seperti gambar di bawah ini
 
-   ![list container](./)
+   ![list container](./07-docker-images-httpd.jpg)
 3. selanjutnya lakukan pull image Apache dengan perintah berikut di cmd:
    ```
    docker pull httpd
