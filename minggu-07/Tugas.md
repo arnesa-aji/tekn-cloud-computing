@@ -1,9 +1,9 @@
-# Menjalankan Container Docker yang Berisi Image Apache/httpd
+# Menjalankan Container Docker yang Berisi Image Apache
 
-## bahan
+## Prerequisites
 1. docker
 2. git
-3. apache/httpd
+3. apache
 
 ## Langkah-langkah
 
