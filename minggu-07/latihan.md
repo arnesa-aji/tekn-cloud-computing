@@ -55,7 +55,7 @@
    docker run -dp 127.0.0.1:3000:3000 getting-started
    ```
 2. setelah beberapa saat akan muncul tampilan seperti di gambar berikut :
-   ![run docker](./)
+   ![run docker](./06-docker-run-dp.jpg)
 
 
     lalu buka browser anda dan ketikan link berikut :
