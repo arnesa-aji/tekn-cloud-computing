@@ -14,7 +14,7 @@
    $ cd composetest
    ```
 
-2. Buat file bernama `app.pydi` direktori proyek Anda dan tempelkan kode berikut di:
+2. Buat file bernama `app.py` di direktori proyek Anda dan tempelkan kode berikut di:
    ```
    import time
 
