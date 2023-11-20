@@ -47,7 +47,7 @@
       ```
 4. Di direktori proyek Anda, buat file bernama `Dockerfile.file` dan tempelkan kode berikut di:
    ```
-    syntax=docker/dockerfile:1
+   syntax=docker/dockerfile:1
    FROM python:3.7-alpine
    WORKDIR /code
    ENV FLASK_APP=app.py
@@ -79,21 +79,19 @@ Periksa apakah `Dockerfile` tidak memiliki ekstensi file seperti .txt. Beberapa 
 
 7. Masukkan `http://localhost:8000/` di browser untuk melihat aplikasi berjalan.
    Anda akan melihat pesan di browser Anda yang mengatakan:
-   ![localhost:8000](./localhost-8000.jpg)
+   ![localhost:8000](./localhost-8000-1.jpg)
 
-8. Segarkan halaman.
+8. Segarkan halaman,Jumlahnya harus bertambah.
 
-Jumlahnya harus bertambah.
+   ![localhost:8000-2](./localhost-8000.jpg)
 
-![localhost:8000-2](./)
-
-9. Beralih ke jendela terminal lain, dan ketik docker image lsuntuk mencantumkan gambar lokal.Daftar gambar pada titik ini harus kembali redisdan web.
+10. Beralih ke jendela terminal lain, dan ketik docker image lsuntuk mencantumkan gambar lokal.Daftar gambar pada titik ini harus kembali redisdan web.
 
     ![docker image ls](./docker-image-ls.jpg)
 
-10. Hentikan aplikasi, baik dengan menjalankan `docker compose down` dari dalam direktori proyek Anda di terminal kedua, atau dengan menekan CTRL+C di terminal asli tempat Anda memulai aplikasi.
+11. Hentikan aplikasi, baik dengan menjalankan `docker compose down` dari dalam direktori proyek Anda di terminal kedua, atau dengan menekan CTRL+C di terminal asli tempat Anda memulai aplikasi.
 
-11. selanjutnya Edit `compose.yaml` file di direktori proyek Anda untuk menambahkan pengikatan pengikatan untuk web layanan:
+12. selanjutnya Edit `compose.yaml` file di direktori proyek Anda untuk menambahkan pengikatan pengikatan untuk web layanan:
     ```
     services:
         web:
@@ -108,18 +106,19 @@ Jumlahnya harus bertambah.
           image: "redis:alpine"
     ```
 
-12. jalankan kembali.Dari direktori proyek Anda, ketik `docker compose up` untuk membuat aplikasi dengan file Compose yang diperbarui, dan jalankan.
+13. jalankan kembali.Dari direktori proyek Anda, ketik `docker compose up` untuk membuat aplikasi dengan file Compose yang diperbarui, dan jalankan.
     ![add bind mount](./06-add-bind-mount.jpg)
 Periksa `Hello World` kembali pesan di browser web, dan segarkan untuk melihat penambahan jumlah.
 
-13. Karena kode aplikasi kini dipasang ke dalam kontainer menggunakan volume, Anda dapat membuat perubahan pada kodenya dan melihat perubahannya secara instan, tanpa harus membuat ulang gambar.
+14. Karena kode aplikasi kini dipasang ke dalam kontainer menggunakan volume, Anda dapat membuat perubahan pada kodenya dan melihat perubahannya secara instan, tanpa harus membuat ulang gambar.
 
 Ubah salam `app.py` dan simpan. Misalnya, ubah `Hello World!` pesan menjadi `Hello from Docker!`:
    ```
    return 'Hello from Docker! I have been seen {} times.\n'.format(count)
    ```
 Segarkan aplikasi di browser Anda. Salamnya harus diperbarui, dan penghitungnya harus tetap bertambah.
-![hello from Docker](./localhost-8000-2.jpg)
+
+   ![hello from Docker](./localhost-8000-2.jpg)
 
 
 ### selesai
