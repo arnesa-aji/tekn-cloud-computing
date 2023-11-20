@@ -59,7 +59,7 @@
    COPY . .
    CMD ["flask", "run"]
    ```
-Periksa apakah `Dockerfile` tidak memiliki ekstensi file seperti .txt. Beberapa editor mungkin menambahkan ekstensi file ini secara otomatis yang mengakibatkan kesalahan saat Anda menjalankan aplikasi.
+   Periksa apakah `Dockerfile` tidak memiliki ekstensi file seperti .txt. Beberapa editor mungkin menambahkan ekstensi file ini secara otomatis yang mengakibatkan kesalahan saat Anda menjalankan aplikasi.
 
 5. Buat file bernama `compose.yaml` di direktori proyek Anda dan tempelkan yang berikut ini:
    ```
@@ -72,7 +72,18 @@ Periksa apakah `Dockerfile` tidak memiliki ekstensi file seperti .txt. Beberapa 
        image: "redis:alpine"
    ```
 
-6. Dari direktori proyek Anda, mulai aplikasi Anda dengan menjalankan `docker compose up`.
+   dengan begini harusnya sudah ada 4 file yang ada di direktori composetest :
+
+   `app.py`
+
+   `requirements.txt`
+
+   `Dockerfile.file`
+
+   `compose.yaml`
+
+
+6. selanjutnya Dari direktori proyek Anda, mulai aplikasi Anda dengan menjalankan `docker compose up`.
    ![jalankan docker compose up](./01-docker-composite-up.jpg)
    ![jalankan docker compose up](./02-docker-composite-up.jpg)
    ![jalankan docker compose up](./03-docker-composite-up.jpg)
@@ -85,7 +96,7 @@ Periksa apakah `Dockerfile` tidak memiliki ekstensi file seperti .txt. Beberapa 
 
    ![localhost:8000-2](./localhost-8000.jpg)
 
-10. Beralih ke jendela terminal lain, dan ketik docker image lsuntuk mencantumkan gambar lokal.Daftar gambar pada titik ini harus kembali redisdan web.
+10. Beralih ke jendela terminal lain, dan ketik `docker image ls` untuk mencantumkan gambar lokal.Daftar gambar pada titik ini harus kembali redisdan web.
 
     ![docker image ls](./docker-image-ls.jpg)
 
@@ -108,17 +119,17 @@ Periksa apakah `Dockerfile` tidak memiliki ekstensi file seperti .txt. Beberapa 
 
 13. jalankan kembali.Dari direktori proyek Anda, ketik `docker compose up` untuk membuat aplikasi dengan file Compose yang diperbarui, dan jalankan.
     ![add bind mount](./06-add-bind-mount.jpg)
-Periksa `Hello World` kembali pesan di browser web, dan segarkan untuk melihat penambahan jumlah.
+    Periksa `Hello World` kembali pesan di browser web, dan segarkan untuk melihat penambahan jumlah.
 
 14. Karena kode aplikasi kini dipasang ke dalam kontainer menggunakan volume, Anda dapat membuat perubahan pada kodenya dan melihat perubahannya secara instan, tanpa harus membuat ulang gambar.
 
-Ubah salam `app.py` dan simpan. Misalnya, ubah `Hello World!` pesan menjadi `Hello from Docker!`:
-   ```
-   return 'Hello from Docker! I have been seen {} times.\n'.format(count)
-   ```
-Segarkan aplikasi di browser Anda. Salamnya harus diperbarui, dan penghitungnya harus tetap bertambah.
+      Ubah salam `app.py` dan simpan. Misalnya, ubah `Hello World!` pesan menjadi `Hello from Docker!`:
+      ```
+      return 'Hello from Docker! I have been seen {} times.\n'.format(count)
+      ```
+      Segarkan aplikasi di browser Anda. Salamnya harus diperbarui, dan penghitungnya harus tetap bertambah.
 
-   ![hello from Docker](./localhost-8000-2.jpg)
+      ![hello from Docker](./localhost-8000-2.jpg)
 
 
 ### selesai
