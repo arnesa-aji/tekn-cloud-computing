@@ -59,7 +59,7 @@
    COPY . .
    CMD ["flask", "run"]
    ```
-Periksa apakah Dockerfiletidak memiliki ekstensi file seperti .txt. Beberapa editor mungkin menambahkan ekstensi file ini secara otomatis yang mengakibatkan kesalahan saat Anda menjalankan aplikasi.
+Periksa apakah `Dockerfile` tidak memiliki ekstensi file seperti .txt. Beberapa editor mungkin menambahkan ekstensi file ini secara otomatis yang mengakibatkan kesalahan saat Anda menjalankan aplikasi.
 
 5. Buat file bernama `compose.yaml` di direktori proyek Anda dan tempelkan yang berikut ini:
    ```
