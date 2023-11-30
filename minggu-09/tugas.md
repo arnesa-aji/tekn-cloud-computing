@@ -40,4 +40,40 @@ Anda dapat menjalankan container berdasarkan versi Linux yang berbeda dengan yan
    
    ![ubuntu bash](./4-ubuntu-bash.jpg)
 
-2. 
+
+## Run a background MySQL container
+
+1. Jalankan wadah MySQL baru dengan perintah berikut.
+
+   ```
+   docker container run \
+    --detach \
+    --name mydb \
+    -e MYSQL_ROOT_PASSWORD=my-secret-pw \
+    mysql:latest
+   ```
+   ![background MySQL container](./8-mydb.jpg)
+
+2. Buat daftar container yang sedang berjalan.
+
+   ```
+   docker container ls
+   ```
+   Perhatikan kontainer Anda sedang berjalan.
+   ![container ls](./9-container-ls.jpg)
+
+3. periksa apa yang terjadi di container Anda dengan menggunakan beberapa perintah Docker bawaan: `docker container logs` dan `docker container top`.
+   ```
+   docker container logs mydb
+   ```
+   Ini menunjukkan log dari kontainer MySQL Docker.
+   ![logs mydb](./11-logs-mydb-1.jpg)
+   ![logs mydb 2](./11-logs-mydb-2.jpg)
+
+4. Daftar versi MySQL menggunakan `docker container exec`.
+   ```
+    docker exec -it mydb \
+    mysql --user=root --password=$MYSQL_ROOT_PASSWORD --version
+   ```
+   Anda akan melihat nomor versi MySQL.
+   ![exec -it mydb](./12-exec-it-mydb.jpg)
