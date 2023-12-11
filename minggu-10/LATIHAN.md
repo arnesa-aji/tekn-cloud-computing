@@ -58,7 +58,42 @@ brctl show
 ```
 ![brctl](./images/06-brctl-show.jpg)
 
-## Langkah 2: Hubungkan kontainer
+   ## Langkah 2: Hubungkan kontainer
 
+   - Buat wadah baru dengan menjalankan `docker run -dt ubuntu sleep infinity`.
+     ```
+     docker run -dt ubuntu sleep infinity
+     ```
+     ![-dt ubuntu](./images/08-ubuntu-sleep-infinity-.jpg)
+  
+   - Anda dapat memverifikasi bahwa wadah contoh kami sudah aktif dengan menjalankan `docker ps`
+     ![docker ps](./images/09-docker-ps-.jpg)
+   - Jalankan `brctl show` perintah lagi.
+     ![brctl show](./images/10-brctl-show.jpg)
 
+     ## Langkah 3: Uji konektivitas jaringan
+     - Ping alamat IP wadah dari prompt shell host Docker Anda dengan menjalankan `ping -c5 <IPv4 Address>`. Ingatlah untuk menggunakan IP wadah di lingkungan Anda .
+       ![ping](./images/12-ping.jpg)
+     - Pertama, kita perlu memulai ID container pada langkah sebelumnya. Anda bisa lari docker psuntuk mendapatkannya.
+       ```
+       docker ps
+       ```
+       ![docker ps](./images/13-docker-ps.jpg)
+     - Selanjutnya, mari kita jalankan shell di dalam container ubuntu tersebut, dengan menjalankan docker exec -it <CONTAINER ID> /bin/bash
+       ![bash](./images/14-docker-ecec-it.jpg)
+     - Selanjutnya kita perlu menginstal program ping. Jadi, ayo lari `apt-get update && apt-get install -y iputils-ping`.
+       ```
+       apt-get update && apt-get install -y iputils-ping
+       ```
+     - Mari kita ping ke www.github.com dengan menjalankan `ping -c5 www.github.com`
+       ![ping](./images/16-ping-github.jpg)
+     - Terakhir, lepaskan shell kita dari container, dengan menjalankan exit.
+       ```
+       exit
+       ```
+       ## Langkah 4: Konfigurasikan NAT untuk konektivitas eksternal
+       
 
+       
+       
+       
