@@ -92,7 +92,65 @@ brctl show
        exit
        ```
        ## Langkah 4: Konfigurasikan NAT untuk konektivitas eksternal
-       
+       - Mulai container baru berdasarkan image resmi NGINX dengan menjalankan `docker run --name web1 -d -p 8080:80 nginx`.
+         ```
+         docker run --name web1 -d -p 8080:80 nginx
+         ```
+         ![NGINX](./images/18-8080-80-nginx.jpg)
+       - Tinjau status kontainer dan pemetaan port dengan menjalankan `docker ps`.
+         ![docker ps](./images/19-docker-ps.jpg)
+Baris teratas menunjukkan container web1 baru yang menjalankan NGINX. Catat perintah yang dijalankan container serta pemetaan port - 0.0.0.0:8080->80/tcpmemetakan port 8080 di semua antarmuka host ke port 80 di dalam container web1 . Pemetaan port inilah yang secara efektif membuat layanan web container dapat diakses dari sumber eksternal (melalui alamat IP host Docker pada port 8080).
+
+Sekarang container sudah berjalan dan dipetakan ke port pada antarmuka host, Anda dapat menguji konektivitas ke server web NGINX.
+
+   # Section #3 - Overlay Networking
+   ## Langkah 1: Dasar-dasar
+   - jalankan `docker swarm init --advertise-addr $(hostname -i)`.
+     ![swarm](./images/21-docker-swarm-init.jpg)
+
+     Di terminal pertama salin seluruh docker swarm join ...perintah yang ditampilkan sebagai bagian dari keluaran dari keluaran terminal Anda. Kemudian, tempelkan perintah yang disalin ke terminal kedua.
+     ```
+     docker swarm join --token SWMTKN-1-69b2x1u2wtjdmot0oqxjw1r2d27f0lbmhfxhvj83chln1l6es5-37ykdpul0vylenefe2439cqpf 10.0.0.5:2377
+
+     ```
+   - Jalankan a `docker node ls` untuk memverifikasi bahwa kedua node adalah bagian dari Swarm.
+     ```
+     docker node ls
+     ```
+     ![docker node ls](./images/22-node-ls.jpg)
+
+   ## Langkah 2: Buat jaringan overlay
+   - Buat jaringan overlay baru yang disebut "overnet" dengan menjalankan `docker network create -d overlay overnet`.
+     ```
+     docker network create -d overlay overnet
+     ```
+     ![create overlay](./images/23-d-overlay-overnet.jpg)
+
+   - Gunakan `docker network ls` perintah untuk memverifikasi jaringan berhasil dibuat.
+     ![docker ls](./images/24-network-ls.jpg)
+
+   ## Langkah 3: Buat layanan
+   - Jalankan perintah berikut dari terminal pertama untuk membuat layanan baru bernama myservice di jaringan overnet dengan dua tugas/replika.
+     ```
+     docker service create --name myservice --network overnet --replicas 2 ubuntu sleep infinity
+     ```
+     ![service create](./images/26-name-myservice.jpg)
+
+     Verifikasi bahwa layanan telah dibuat dan kedua replika sudah aktif dengan menjalankan `docker service ls`.
+     ![service ls](./images/27-service-ls.jpg)
+
+     2/2Kolom di menunjukkan REPLICASbahwa kedua tugas di layanan aktif dan berjalan.
+     Verifikasi bahwa satu tugas (replika) berjalan pada masing-masing dari dua node di Swarm dengan menjalankan docker service ps myservice.
+     ```
+     docker service ps myservice
+     ```
+     ![ps myservice](./images/28-ps-myservice.jpg)
+
+   ## Langkah 4: Uji jaringan
+   
+
+     
+     
 
        
        
