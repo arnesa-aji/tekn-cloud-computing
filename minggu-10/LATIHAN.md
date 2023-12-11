@@ -165,7 +165,14 @@ Sekarang container sudah berjalan dan dipetakan ke port pada antarmuka host, And
      ```
      ![apt-get](./images/33-inputils-ping.jpg)
 
+   - Sekarang, mari kita ping 10.0.0.3.
+     ```
+     ping -c5 10.0.0.3
+     ```
+
      Output di atas menunjukkan bahwa kedua tugas dari layanan myservice berada di jaringan overlay yang sama yang mencakup kedua node dan keduanya dapat menggunakan jaringan ini untuk berkomunikasi.
+
+     
      
 
      
