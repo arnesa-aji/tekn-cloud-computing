@@ -147,7 +147,26 @@ Sekarang container sudah berjalan dan dipetakan ke port pada antarmuka host, And
      ![ps myservice](./images/28-ps-myservice.jpg)
 
    ## Langkah 4: Uji jaringan
-   
+   - Jalankan perintah berikut dari terminal pertama.
+     ```
+     docker network inspect overnet
+     ```
+     ![overnet](./images/30-inspect-overnet.jpg)
+   - Jalankan docker psperintah untuk mendapatkan ID tugas layanan sehingga Anda bisa masuk ke dalamnya pada langkah berikutnya.
+     ```
+     docker ps
+     ```
+     ![docker ps](./images/31-docker-ps.jpg)
+   - Masuk ke tugas layanan. Pastikan untuk menggunakan wadah IDdari lingkungan Anda karena akan berbeda dari contoh yang ditunjukkan di bawah. Kita bisa melakukan ini dengan menjalankan `docker exec -it <CONTAINER ID> /bin/bash`.
+     ![bash](./images/32-docker-exec.jpg)
+   - Instal perintah ping dan ping tugas layanan yang berjalan pada node kedua yang memiliki alamat IP 10.0.0.3dari docker network inspect overnetperintah tersebut.
+     ```
+     apt-get update && apt-get install -y iputils-ping
+     ```
+     ![apt-get](./images/33-inputils-ping.jpg)
+
+     Output di atas menunjukkan bahwa kedua tugas dari layanan myservice berada di jaringan overlay yang sama yang mencakup kedua node dan keduanya dapat menggunakan jaringan ini untuk berkomunikasi.
+     
 
      
      
