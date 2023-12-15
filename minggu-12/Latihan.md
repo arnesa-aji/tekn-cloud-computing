@@ -13,3 +13,17 @@ docker run -dt ubuntu sleep infinity
 ```
 Perintah ini akan membuat container baru berdasarkan gambar ubuntu:latest dan akan menjalankan perintah sleep agar container tetap berjalan di latar belakang.
 
+```
+docker ps
+```
+![docker ps](./2-docker-ps.jpg)
+
+## 2. Create a Manager node
+
+Jalankan `docker swarm init` di node1.
+```
+docker swarm init --advertise-addr $(hostname -i)
+```
+![](./3-swarm-init-.jpg)
+
+## 
