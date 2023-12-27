@@ -17,7 +17,12 @@ Sebelum install Git di Windows, anda harus sudah mempunyai editor teks yang didu
 12. Jika selesai akan muncul dialog pemberitahuan. Klik pada Finish.
 13. Untuk menjalankan, dari Start menu, ketikkan "Git", akan muncul beberapa pilihan. Pilih "Git Bash" atau "Git GUI".
 14. Tampilan jika akan menggunakan "Git Bash"
-    [git bash]()
+    [git bash](./git-bash.jpg)
+15. Tampilan jika akan menggunakan "Git GUI"
+    [git gui](./git-gui.jpg)
+
+
+    
 
 
 01-install-git : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/README.md
