@@ -1,4 +1,4 @@
-## Latihan : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/latihan.md
+## Latihan : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/git-single.md
 ## Tugas : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/tugas.md
 
 
