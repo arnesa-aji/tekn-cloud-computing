@@ -1,4 +1,4 @@
-## Latihan :
+## Latihan : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/latihan.md
 ## Tugas : 
 
 
