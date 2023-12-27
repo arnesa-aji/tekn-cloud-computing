@@ -1,9 +1,4 @@
-
-Minggu 01 :
-
-===================Latihan=========================
-
-latihan no.1
+## latihan 1
 
 01-install-git : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/README.md
 
@@ -14,7 +9,7 @@ latihan no.1
 git-single.md : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/git-single.md
 
 
-latihan no.2
+## latihan 2
 
-rangkuman-cloud-computing.md : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/rangkuman-cloud-computing.md
+### rangkuman-cloud-computing.md : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/rangkuman-cloud-computing.md
 
