@@ -55,8 +55,6 @@ Langkah ini cukup dilakukan sekali saja, kecuali jika ingin melakukan perubahan 
 
 ### 3. Mengelola Repo Sendiri di Account Sendiri
 
-# Mengelola Repo Sendiri di Account Sendiri
-
 ## Langkah-langkah
 
 Setiap orang yang telah mempunyai account di GitHub bisa membuat repo dengan. Secara umum, langkah-langkahnya adalah sebagai berikut:
