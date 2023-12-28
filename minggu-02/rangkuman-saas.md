@@ -1,6 +1,6 @@
+## Latihan 1
+
 Secara ringkas, perbedaan antara model-model ini terletak pada tingkat kendali dan tanggung jawab manajemen Anda terhadap infrastruktur dasarnya
-
-
 
 1. IaaS (Infrastructure as a Service): Dalam model ini, Anda memperoleh bahan mentah (sumber daya komputasi, disk penyimpanan, OS) dari Penyedia Layanan Cloud (CSP). Anda memiliki kendali atas konfigurasi OS Anda, pemutakhiran (patching), dan beban kerja yang dijalankan pada lingkungan Anda. Ini mirip dengan membeli bahan untuk membuat pizza di rumah, di mana Anda mengendalikan proses memasak tetapi tidak mengendalikan infrastrukturnya.
 
@@ -65,12 +65,7 @@ Content Delivery Network (CDN): CDN adalah sistem server terdistribusi yang meni
 
 
 
-
-
-
-=============================================================================
-
-latihan no 2 :
+## latihan 2 :
 
 Berikut adalah dua layanan SaaS (Software as a Service) 
 
