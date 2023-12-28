@@ -1,6 +1,6 @@
-## latihan 1
+# latihan 1
 
-### 1. Instalasi Git
+## 1. Instalasi Git
 #### instal Git di Windows
 
 Sebelum install Git di Windows, anda harus sudah mempunyai editor teks yang didukung oleh Windws. Editor yang bisa dipilih banyak, tetapi disarankan menggunakan Notepad++ atau Visual Studion Code atau Vim. Keberadaan editor teks ini akan menentukan keberhasilan instalasi
@@ -31,7 +31,7 @@ Sebelum install Git di Windows, anda harus sudah mempunyai editor teks yang didu
 
     
 
-### 2. Konfigurasi Git
+## 2. Konfigurasi Git
 Secara minimal, user harus memberitahu Git tentang username serta email yang digunakan setiap kali terjadi perubahan pada repo Git. Username serta email ini yang akan dimasukkan oleh Git ke catatan perubahan di repo. Di sistem operasi Linux atau sejanis (UNIX), konfigurasi ini nantinya akan disimpan di $HOME/.gitconfig. Untuk sistem operasi Windows, konfigurasi ini akan disimpan di C:\Document and Settings\NamaUser dengan nama file .gitconfig. Secara minimal, ada 2 hal yang perlu dikonfigurasi yaitu username dan email. Gunakan perintah berikut:
 
 ```
@@ -53,7 +53,7 @@ color.ui=true
 Langkah ini cukup dilakukan sekali saja, kecuali jika ingin melakukan perubahan nama dan email.
 
 
-### 3. Mengelola Repo Sendiri di Account Sendiri
+## 3. Mengelola Repo Sendiri di Account Sendiri
 
 ## Langkah-langkah
 
@@ -63,7 +63,7 @@ Setiap orang yang telah mempunyai account di GitHub bisa membuat repo dengan. Se
 2. Cloe repo kosong tersebut di komputer lokal
 3. Perintah berikutnya terkait dengan perubahan repo serta sinkronisasi antara GitHub dengan lokal.
 
-## Membuat Repo
+### Membuat Repo
 
 Untuk membuat repo, gunakan langkah-langkan berikut:
 
@@ -73,7 +73,7 @@ Untuk membuat repo, gunakan langkah-langkan berikut:
 
 Setelah langkah-langkah tersebut, repo akan dibuat dan bisa diakses menggunakan pola ```https://github.com/username/reponame```. Pada repo tersebut, hanya akan muncul 1 file, yaitu LICENSE. Jika memilih membuat README pada saat langkah ke 2, juga akan muncul README.md. Ada atau tidak ada README.md tidak mempunyai efek apapun pada langkah ini.
 
-## Clone Repo
+### Clone Repo
 
 Proses ```clone``` adalah proses untuk menduplikasikan remote repo di GitHub ke komputer lokal. Untuk melakukan proses ```clone```, gunakan perintah berikut:
 
@@ -89,7 +89,7 @@ Unpacking objects: 100% (3/3), done.
 
 Setelah perintah ini, di direktori ```awesome-project``` akan disimpan isi repo yang sama dengan di GitHub. Perbedaannya, di komputer lokal terdapat direktori ```.git``` yang digunakan secara internal oleh Git.
 
-## Mengelola Repo
+### Mengelola Repo
 
 Setelah ```clone``` ke komputer lokal, semua manipulasi konten dilakukan di komputer lokal dan hasilnya akan di-*push* ke remote repo di GitHub. Dengan demikian, jangan berganti-ganti remote lokal, sekali dibuat disitu, tetap berada disitu. Jika kehilangan repo lokal, clone ulang ke direktori yang bersih (kosong) setelah itu baru lakukan pengelolaan repo. Beberapa hal yang biasanya dilakukan akan diuraikan berikut ini.
 
@@ -139,7 +139,7 @@ $
 
 Cara ini lebih mudah tetapi mempunyai resiko jika terjadi kesalahan dalam edit. Cara yang lebih aman tetapi memerlukan langkah yang lebih panjang adalah ```branching and merging```
 
-### Mengubah Isi dengan Branching and Merging
+#### Mengubah Isi dengan Branching and Merging
 
 Dengan menggunakan cara ini, setiap kali akan melakukan perubaham, perubahan itu dilakukan di komputer lokal dengan membuat suatu *cabang* yang nantinya digunakan untuk menampung perubahan-perubahan tersebut. Setelah itu, cabang itu yang akan dikirim ke repo GitHub untuk dimintai review kemudian digabungkan (```merge```) ke master. Secara umum, repo yang dibuat biasanya sudah mempunyai satu branch yang disebut dengan ```master```. Cara ini lebih aman, terstruktur, terkendali, dan mempunyai
 history yang lebih baik. Jika perubahan yang kita buat sudah terlalu kacau dan kita menyesal, maka ada cara untuk "membersihkan" repo lokal kita. Secara umum, langkahnya adalah sebagai berikut:
@@ -229,7 +229,7 @@ Fast-forward
 $
 ```
 
-### Sinkronisasi
+#### Sinkronisasi
 
 Suatu saat, bisa saja terjadi kita menggunakan komputer lain dan mengedit repo melalui repo lokal di komputer lain, setelah itu pindah ke kamputer lain lagi. Saat itu, kita perlu melakukan sinkronisasi ke kemputer lokal. Perintah untuk sinkronisasi adalah:
 
@@ -239,7 +239,7 @@ $ git pull
 
 Perintah ini dikerjakan di direktori tempat repo lokal kita berada.
 
-### Membatalkan Perubahan
+#### Membatalkan Perubahan
 
 Praktik yang baik adalah membuat *branch* pada saat kita akan melakukan perubahan-perubahan. Jika perubahan-perubahan yang kita lakukan sudah sedemikian kacaunya, maka kita bisa membuat supaya perubahan-perubahan yang kacau tersebut hilang dan kembali ke kondisi bersih seperti semula.
 
@@ -276,7 +276,7 @@ Ini isi proyek
 $
 ```
 
-### Undo Commit Terakhir
+#### Undo Commit Terakhir
 
 Suatu saat, mungkin kita sudah terlanjur mem-*push* perubahan ke repo GitHub, setelah itu kita baru menyadari bahwa perubahan tersebut salah. Untuk itu, kita bisa melakukan ```git revert```.
 
@@ -556,11 +556,9 @@ $
 
 
 
-git-single.md : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/git-single.md
 
+# latihan 2
 
-## latihan 2
-
-### rangkuman-cloud-computing.md : https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/rangkuman-cloud-computing.md
+## [rangkuman-cloud-computing.md](https://github.com/arnesa-aji/tekn-cloud-computing/blob/master/minggu-01/rangkuman-cloud-computing.md)
 
 
