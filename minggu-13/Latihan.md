@@ -20,3 +20,39 @@
 
 ## Create a Deployment
 
+1. Gunakan `kubectl create` perintah untuk membuat Deployment yang mengelola sebuah Pod. Pod menjalankan sebuah Container berdasarkan image Docker yang disediakan.
+   ```
+   kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080
+   ```
+
+2. View the Deployment:
+   ```
+   kubectl get deployments
+   ```
+
+3. View the Pod:
+   ```
+   kubectl get pods
+   ```
+
+4. View cluster events:
+   ```
+   kubectl get events
+   ```
+
+5. View the configuration:
+   ```
+   kubectl config view
+   ```
+
+6. Melihat log aplikasi untuk sebuah container di dalam pod.
+   ```
+   kubectl logs hello-node-5f76cf6ccf-br9b5
+   ```
+
+## Create a Service
+1. Ekspos Pod ke internet publik menggunakan `kubectl expose` perintah:
+   ```
+   kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+   ```
+   
