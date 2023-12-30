@@ -55,4 +55,12 @@
    ```
    kubectl expose deployment hello-node --type=LoadBalancer --port=8080
    ```
-   
+2. Lihat Layanan yang telah di buat:
+   ```
+   kubectl get services
+   ```
+3. Jalankan perintah berikut:
+   ```
+   minikube service hello-node
+   ```
+   Ini akan membuka jendela browser yang menyajikan aplikasi Anda dan menampilkan respons aplikasi.
