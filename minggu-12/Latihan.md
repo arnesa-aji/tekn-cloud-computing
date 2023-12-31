@@ -59,7 +59,7 @@ Perintah ini docker node lsmenunjukkan kepada Anda semua node yang ada di geromb
    docker service ls
    ```
 
-##  Scale the application
+## 5. Scale the application
 lakukan prosedur berikut dari node1 .
 ```
 docker service update --replicas 7 sleep-app
@@ -69,6 +69,30 @@ lalu jalankan perintah berikut :
 ```
 docker service ps sleep-app
 ```
+![image](./)
+
+## 6. Drain a node and reschedule the containers
+Lihatlah kembali status node Anda dengan `docker node ls` menjalankan node 1 .
+```
+docker node ls
+```
+![image](./)
+
+ini akan mengeluarkan node 2 dari layanan untuk pemeliharaan.
+selanjutnya lihat container yang Anda jalankan di node 2.
+```
+socker ps
+```
+![image](./)
+
+node 2 tidak memiliki container apa pun yang berjalan di dalamnya.
+
+Terakhir, periksa kembali layanan di node1 untuk memastikan bahwa container telah dijadwal ulang. Anda akan melihat keempat container berjalan di dua node yang tersisa.
+```
+docker service ps sleep-app
+```
+
+## selesai
 
    
 
