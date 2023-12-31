@@ -50,4 +50,27 @@ Perintah ini docker node lsmenunjukkan kepada Anda semua node yang ada di geromb
 
 ## 4. Deploy applications across multiple hosts 
 1. Deploy the application components as Docker services
+   Mari kita terapkan sleepsebagai Layanan di Docker Swarm
+   ```
+   docker service create --name sleep-app ubuntu sleep infinity
+   ```
+2. Verifikasi bahwa service create telah diterima oleh manajer Swarm
+   ```
+   docker service ls
+   ```
+
+##  Scale the application
+lakukan prosedur berikut dari node1 .
+```
+docker service update --replicas 7 sleep-app
+```
+Manajer Swarm menjadwalkan agar ada 7 sleep-appkontainer di cluster. Ini akan dijadwalkan secara merata di seluruh anggota Swarm.
+lalu jalankan perintah berikut :
+```
+docker service ps sleep-app
+```
+
+   
+
+   
    
